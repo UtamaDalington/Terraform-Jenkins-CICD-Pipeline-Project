@@ -43,8 +43,8 @@
 3) Jenkins
     - Create a Jenkins VM instance 
     - Name: `Jenkins-CI`
-    - AMI: `Amazon Linux 2`
-    - Instance type: `t2.medium`
+    - AMI: `Ubuntu 24.04`
+    - Instance type: `c7i-flex.large (2 vCPU and 4 GiB Memory)`
     - Key pair: `Select` or `create a new keypair`
     - Security Group (Edit/Open): `8080` and `22` to `0.0.0.0/0`
     - IAM instance profile: Select the `AWS-AdministratorAccess-Role`
