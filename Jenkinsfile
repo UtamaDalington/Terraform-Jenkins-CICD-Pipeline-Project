@@ -13,7 +13,7 @@ pipeline {
                 sh 'terraform version'
             }
         }
-        // IInitialize Terraform
+        // Initialize terraform
         stage('Initialize Terraform Environment') {
             steps {
                 sh 'terraform init'
@@ -25,19 +25,25 @@ pipeline {
                 sh 'terraform validate'
             }
         }
-        // Generating Execution Plan
+        // Generating execution plan
         stage('Generate Terraform Plan') {
             steps {
                 sh 'terraform plan'
             }
         }
-        // Deployment Apporval
+        // Checkov infrastructure automation test
+        stage('Checkov scan') {
+            steps {
+                sh 'checkov -d .'
+            }
+        }
+        // Deployment apporval
         stage('Manual Approval') {
             steps {
                 input 'Approval Infra Deployment'
             }
         }
-        // Deploy Terraform Infrastructure
+        // Deploy terraform infrastructure
         stage('Deploy Infrastructure') {
             steps {
                 sh 'terraform apply --auto-approve'
