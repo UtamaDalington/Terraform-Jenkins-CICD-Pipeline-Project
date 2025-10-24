@@ -32,7 +32,7 @@ pipeline {
             }
         }
         // Snyk infrastructure automation test
-        stage('SCA') {
+        stage('Snyk scan') {
             steps {
                 snykSecurity(
                   snykInstallation: 'snyk',
