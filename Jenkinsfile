@@ -43,10 +43,16 @@ pipeline {
                 input 'Approval Infra Deployment'
             }
         }
-        // Deploy terraform infrastructure
+        // // Deploy terraform infrastructure
+        // stage('Deploy Infrastructure') {
+        //     steps {
+        //         sh 'terraform apply --auto-approve'
+        //     }
+        // }
+        // Destroy terraform infrastructure
         stage('Deploy Infrastructure') {
             steps {
-                sh 'terraform apply --auto-approve'
+                sh 'terraform destroy --auto-approve'
             }
         }
     }
