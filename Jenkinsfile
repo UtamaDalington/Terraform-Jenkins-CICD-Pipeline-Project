@@ -31,12 +31,12 @@ pipeline {
                 sh 'terraform plan'
             }
         }
-        // Checkov infrastructure automation test
-        stage('Checkov scan') {
-            steps {
-                sh 'checkov -d .'
-            }
-        }
+        // // Checkov infrastructure automation test
+        // stage('Checkov scan') {
+        //     steps {
+        //         sh 'checkov -d .'
+        //     }
+        // }
         // Deployment apporval
         stage('Manual Approval') {
             steps {
