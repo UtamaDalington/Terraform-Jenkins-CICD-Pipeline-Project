@@ -31,30 +31,40 @@ pipeline {
                 sh 'terraform plan'
             }
         }
-        // // Checkov infrastructure automation test
-        // stage('Checkov scan') {
-        //     steps {
-        //         sh 'checkov -d .'
-        //     }
-        // }
+        // Snyk infrastructure automation test
+        stage('SCA') {
+            steps {
+                snykSecurity(
+                  snykInstallation: 'snyk',
+                  snykTokenId: 'Snyk-Token-Alert',
+                  failOnIssues: false,
+                )
+            }
+        }
+        // Checkov infrastructure automation test
+        stage('Checkov scan') {
+            steps {
+                sh 'checkov -d .'
+            }
+        }
         // Deployment apporval
         stage('Manual Approval') {
             steps {
                 input 'Approval Infra Deployment'
             }
         }
-        // // Deploy terraform infrastructure
-        // stage('Deploy Infrastructure') {
-        //     steps {
-        //         sh 'terraform apply --auto-approve'
-        //     }
-        // }
-        // Destroy terraform infrastructure
+        // Deploy terraform infrastructure
         stage('Deploy Infrastructure') {
             steps {
-                sh 'terraform destroy --auto-approve'
+                sh 'terraform apply --auto-approve'
             }
         }
+        // // Destroy terraform infrastructure
+        // stage('Deploy Infrastructure') {
+        //     steps {
+        //         sh 'terraform destroy --auto-approve'
+        //     }
+        // }
     }
     post {
     always {
