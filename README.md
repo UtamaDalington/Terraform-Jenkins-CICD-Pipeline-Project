@@ -30,7 +30,8 @@
 2) Create An IAM Profile/Role For The Jenkins Environment
 - Create an EC2 Service Role in IAM with `AdministratorAccess` Privilege 
 - Navigate to IAM
-![IAM!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/Screen%20Shot%202023-10-03%20at%206.20.44%20PM.png)
+<img width="1920" height="872" alt="Screenshot (331)" src="https://github.com/user-attachments/assets/6a4930c1-0488-493f-849d-6cc38c97d7d0" />
+
     - Click on `Roles`
     - Click on `Create Role`
     - Select `Service Role`
