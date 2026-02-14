@@ -24,7 +24,8 @@
         - Commit changes: `git commit -m "adding project source code"`
         - Push to GitHub: `git push`
     - Confirm that the code is now available on GitHub as shown below...
-    ![ProjectRepositoryCode!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/dsdsdsdgdghhgjkyutyrtegdgdr.png)
+    <img width="1920" height="932" alt="Screenshot (328)" src="https://github.com/user-attachments/assets/2efcced3-544b-4d5c-94d0-bd811e5e7579" />
+
 
 2) Create An IAM Profile/Role For The Jenkins Environment
 - Create an EC2 Service Role in IAM with `AdministratorAccess` Privilege 
