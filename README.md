@@ -54,9 +54,7 @@
     - Launch Instance
 
 4) Slack 
-    - Go to the bellow Workspace and create a Private Slack Channel and name it "yourfirstname-jenkins-cicd-pipeline-alerts"
-    - Link: https://join.slack.com/t/jjtechtowerba-zuj7343/shared_invite/zt-24mgawshy-EhixQsRyVuCo8UD~AbhQYQ  
-      - You can either join through the browser or your local Slack App
+    - Go to Slack, create a `Workspace` and give it a name (for example: `CICD-Pipeline-Peojects`)
       - Create a `Private Channel` using the naming convention `YOUR_INITIAL-terraform-cicd-alerts`
         - **NOTE:** *`(The Channel Name Must Be Unique, meaning it must be available for use)`*
       - Visibility: Select `Private`
@@ -65,9 +63,9 @@
       - Click on `Configuration/Install` and Click `Add to Slack` 
       - On Post to Channel: Click the Drop Down and select your channel above `YOUR_INITIAL-terraform-cicd-alerts`
       - Click `Add Jenkins CI Integration`
-      - Scrol Down and Click `SAVE SETTINGS/CONFIGURATIONS`
+      - Scroll Down and Click `SAVE SETTINGS/CONFIGURATIONS`
       - Leave this page open
-      ![SlackConfig!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-26%20at%202.08.55%20PM.png)
+      <img width="1600" height="862" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/2c266576-871b-485b-b786-d98378864f59" />
 
 5) Install Plugins
 - Snyk 
