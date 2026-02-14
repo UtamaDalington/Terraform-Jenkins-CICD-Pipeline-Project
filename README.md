@@ -50,7 +50,7 @@
     - Key pair: `Select` or `create a new keypair`
     - Security Group (Edit/Open): `8080` and `22` to `0.0.0.0/0`
     - IAM instance profile: Select the `AWS-AdministratorAccess-Role`
-    - User data (Copy the following user data): https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/terraform-jenkins-cicd-pipeline-project/installations/jenkins-install.sh
+    - User data (Copy the following user data): https://github.com/UtamaDalington/Maven-SonarQube-Nexus-Jenkins-installations/blob/main/install-jenkins1.sh
     - Launch Instance
 
 4) Slack 
