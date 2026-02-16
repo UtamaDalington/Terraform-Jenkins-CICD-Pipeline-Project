@@ -52,6 +52,8 @@
     - IAM instance profile: Select the `AWS-AdministratorAccess-Role`
     - User data (Copy the following user data): https://github.com/UtamaDalington/Maven-SonarQube-Nexus-Jenkins-installations/blob/main/install-jenkins1.sh
     - Launch Instance
+    <img width="1426" height="1040" alt="Screenshot (330)" src="https://github.com/user-attachments/assets/85644107-3cc0-491e-b332-5e7032cea846" />
+
 
 4) Slack 
     - Go to Slack, create a `Workspace` and give it a name (for example: `CICD-Pipeline-Peojects`)
